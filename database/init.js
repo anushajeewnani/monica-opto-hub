@@ -10,6 +10,8 @@ if (!fs.existsSync(uploadsDir) && process.env.NODE_ENV !== 'production') {
   } catch (err) {
     console.log('Note: Could not create uploads directory (serverless environment)');
   }
+} else if (process.env.NODE_ENV === 'production') {
+  console.log('Skipping uploads directory creation in production (Vercel)');
 }
 
 // Database path
