@@ -2,17 +2,8 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const fs = require('fs');
 
-// Ensure uploads directory exists (only in non-serverless environments)
-const uploadsDir = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadsDir) && process.env.NODE_ENV !== 'production') {
-  try {
-    fs.mkdirSync(uploadsDir, { recursive: true });
-  } catch (err) {
-    console.log('Note: Could not create uploads directory (serverless environment)');
-  }
-} else if (process.env.NODE_ENV === 'production') {
-  console.log('Skipping uploads directory creation in production (Vercel)');
-}
+// Note: Uploads directory creation removed for Vercel compatibility
+// Vercel serverless functions don't support directory creation
 
 // Database path
 const dbPath = path.join(__dirname, 'database.sqlite');
