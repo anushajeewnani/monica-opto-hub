@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Luxury Eyewear Boutique</title>
+    <meta name="description" content="Premium eyewear boutique offering luxury sunglasses, optical frames, and contact lenses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-bar">
+            <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="logo" href="#" aria-label="Home">MONICA OPTO HUB</a>
+            <nav id="primary-nav" class="nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#steals">Steals</a></li>
+                    <li class="has-mega"><a href="men.html">Men</a></li>
+                    <li class="has-mega"><a href="women.html">Women</a></li>
+                    <li class="has-mega">
+                        <button class="mega-toggle" aria-expanded="false">Brands</button>
+                        <div class="mega" role="menu" aria-label="Shop by brand">
+                            <div class="mega__col">
+                                <h4>A - C</h4>
+                                <a href="#">Akoni</a>
+                                <a href="#">Balenciaga</a>
+                                <a href="#">Bottega Veneta</a>
+                                <a href="#">Burberry</a>
+                                <a href="#">Cartier</a>
+                                <a href="#">Celine</a>
+                            </div>
+                            <div class="mega__col">
+                                <h4>D - J</h4>
+                                <a href="#">David Beckham</a>
+                                <a href="#">Dolce & Gabbana</a>
+                                <a href="#">Dior</a>
+                                <a href="#">Fendi</a>
+                                <a href="#">Gucci</a>
+                                <a href="#">Givenchy</a>
+                            </div>
+                            <div class="mega__col">
+                                <h4>K - O</h4>
+                                <a href="#">Kenzo</a>
+                                <a href="#">Lindberg</a>
+                                <a href="#">Maui Jim</a>
+                                <a href="#">Maybach</a>
+                                <a href="#">Michael Kors</a>
+                                <a href="#">Oakley</a>
+                            </div>
+                            <div class="mega__col">
+                                <h4>P - Z</h4>
+                                <a href="#">Prada</a>
+                                <a href="#">Ray-Ban</a>
+                                <a href="#">Saint Laurent</a>
+                                <a href="#">Tom Ford</a>
+                                <a href="#">Versace</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#appointments">Appointments</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="action" data-theme-toggle aria-label="Toggle theme">Pink</button>
+                <button class="action" aria-label="Search">
+                    <span class="icon">🔎</span>
+                </button>
+                <button class="action" aria-label="Account">
+                    <span class="icon">👤</span>
+                </button>
+                <button class="action" aria-label="Cart">
+                    <span class="icon">🛒</span>
+                </button>
+            </div>
+        </div>
+        <div class="notice" role="note">
+            <div class="container">
+                Our prices are being updated to reflect GST changes. Chat with us for revised prices.
+            </div>
+        </div>
+        <div class="nav-overlay" data-overlay aria-hidden="true"></div>
+    </header>
+
+    <aside class="drawer" data-drawer>
+        <div class="drawer__panel">
+            <div class="drawer__head">
+                <strong class="drawer__title">Menu</strong>
+                <button class="drawer__close" data-drawer-close aria-label="Close">✕</button>
+            </div>
+            <div class="drawer__body">
+                <ul class="drawer__list">
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>RayBan x Meta <span class="plus">+</span></button></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>Steals of the Month <span class="plus">+</span></button></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>Men <span class="plus">+</span></button><div class="drawer__panelInner"><a href="men.html">Shop Men</a></div></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>Women <span class="plus">+</span></button><div class="drawer__panelInner"><a href="women.html">Shop Women</a></div></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>Shop by Brand <span class="plus">+</span></button><div class="drawer__panelInner"><a href="#brands">All Brands</a></div></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>Contact Lenses <span class="plus">+</span></button><div class="drawer__panelInner"><a href="contact-lenses.html">Browse lenses</a></div></li>
+                    <li class="drawer__item"><button class="drawer__btn" data-accordion>About Us <span class="plus">+</span></button><div class="drawer__panelInner"><a href="#appointments">Appointments</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main">
+        <section class="hero" aria-label="Featured">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">Now Trending</p>
+                    <h1>Ray-Ban Meta Glasses</h1>
+                    <p class="lead">Immersive, iconic, and innovative. Book your pair today.</p>
+                    <div class="actions">
+                        <a class="btn btn--primary" href="#appointments">Book Appointment</a>
+                        <a class="btn" href="#steals">Shop Deals</a>
+                    </div>
+                </div>
+                <div class="hero__media" aria-hidden="true">
+                    <div class="hero__card">Featured Collection</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="men" class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Men</h2>
+                    <a class="link" href="#">Shop all</a>
+                </div>
+                <div class="category-tiles">
+                    <a class="category-card" href="sunglasses.html"><span>Sunglasses</span></a>
+                    <a class="category-card" href="optical-frames.html"><span>Optical Frames</span></a>
+                    <a class="category-card" href="contact-lenses.html"><span>Contact Lenses</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="women" class="section section--strip">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Women</h2>
+                    <a class="link" href="#">Shop all</a>
+                </div>
+                <div class="category-tiles">
+                    <a class="category-card" href="sunglasses.html"><span>Sunglasses</span></a>
+                    <a class="category-card" href="optical-frames.html"><span>Optical Frames</span></a>
+                    <a class="category-card" href="contact-lenses.html"><span>Contact Lenses</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">His & Her</h2>
+                </div>
+                <div class="looks-pairs">
+                    <div class="look">
+                        <div class="look__media"></div>
+                        <div class="look__meta">
+                            <h3>757 003 64</h3>
+                            <p>₹ 24,500.00</p>
+                            <a class="btn btn--ghost" href="#">View this product</a>
+                        </div>
+                    </div>
+                    <div class="look">
+                        <div class="look__media"></div>
+                        <div class="look__meta">
+                            <h3>1860S 003 52</h3>
+                            <p>₹ 26,800.00</p>
+                            <a class="btn btn--ghost" href="#">View this product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Gucci Spotlight</h2>
+                    <a class="link" href="#">View all products</a>
+                </div>
+                <div class="grid-4">
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">1830SK 004 55</h3>
+                        <p class="product-card__price">₹ 20,700.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">1829SK 002 53</h3>
+                        <p class="product-card__price">₹ 22,200.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">1884SK 001 56</h3>
+                        <p class="product-card__price">₹ 29,900.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">1866SK 004 56</h3>
+                        <p class="product-card__price">₹ 24,500.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">#50YearsOfHeritage</h2>
+                </div>
+                <ol class="timeline">
+                    <li>
+                        <div class="tl__year">1990</div>
+                        <div class="tl__desc">Where it all began. Opening the first boutique.</div>
+                    </li>
+                    <li>
+                        <div class="tl__year">2019</div>
+                        <div class="tl__desc">Introduced unique independent eyewear brands to India.</div>
+                    </li>
+                    <li>
+                        <div class="tl__year">2022</div>
+                        <div class="tl__desc">Launched third boutique, elevating the luxury experience.</div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="steals" class="section section--strip">
+            <div class="container">
+                <h2 class="section__title">Steals of the Month</h2>
+                <ul class="pill-row" role="list">
+                    <li><a class="pill" href="#">Flat 12%</a></li>
+                    <li><a class="pill" href="#">Flat 15%</a></li>
+                    <li><a class="pill" href="#">Flat 20%</a></li>
+                    <li><a class="pill" href="#">Flat 40%</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="brands" class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Shop by Brand</h2>
+                    <a class="link" href="#">View all</a>
+                </div>
+                <div class="brand-grid">
+                    <a class="brand-card" href="#">Gucci</a>
+                    <a class="brand-card" href="#">Burberry</a>
+                    <a class="brand-card" href="#">Prada</a>
+                    <a class="brand-card" href="#">Tom Ford</a>
+                    <a class="brand-card" href="#">Versace</a>
+                    <a class="brand-card" href="#">Ray-Ban</a>
+                    <a class="brand-card" href="#">Cartier</a>
+                    <a class="brand-card" href="#">Maybach</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Trending Now</h2>
+                    <div class="slider-controls" aria-label="Carousel controls">
+                        <button class="slider-prev" aria-label="Previous">←</button>
+                        <button class="slider-next" aria-label="Next">→</button>
+                    </div>
+                </div>
+                <div class="product-slider" data-slider>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">Gucci 1830SK</h3>
+                        <p class="product-card__price">₹ 20,700.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">Prada 1888S</h3>
+                        <p class="product-card__price">₹ 33,700.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">Ray-Ban 3774D</h3>
+                        <p class="product-card__price">₹ 10,990.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media"></div>
+                        <h3 class="product-card__title">Cartier Skyline</h3>
+                        <p class="product-card__price">₹ 96,500.00</p>
+                        <button class="btn btn--ghost">Preview</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointments" class="section section--accent">
+            <div class="container appointment">
+                <div>
+                    <h2 class="section__title">Eye exams, style consultations & more</h2>
+                    <p>Schedule your appointment for a bespoke experience across our boutiques.</p>
+                </div>
+                <a class="btn btn--primary" href="#">Schedule Appointment</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">What our clients say</h2>
+                <div class="reviews">
+                    <figure class="review">
+                        <blockquote>Exceptional curation and service. The consultation was spot on.</blockquote>
+                        <figcaption>— A. Sharma</figcaption>
+                    </figure>
+                    <figure class="review">
+                        <blockquote>Luxurious experience from start to finish. Highly recommend.</blockquote>
+                        <figcaption>— R. Mehta</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="footer-title">Support</h3>
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Contact</h3>
+                <ul>
+                    <li><a href="#">Boutiques</a></li>
+                    <li><a href="tel:+917000532010">+91-7000532010</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Join the club</h3>
+                <form class="newsletter" aria-label="Newsletter">
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" type="email" placeholder="Your email" required>
+                    <button class="btn btn--primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-legal">
+            <small>© Luxury Eyewear Boutique</small>
+            <div class="lang-picker">
+                <label for="lang" class="sr-only">Language</label>
+                <select id="lang" name="lang">
+                    <option>English</option>
+                    <option>Français</option>
+                    <option>Deutsch</option>
+                    <option>简体中文</option>
+                    <option>Italiano</option>
+                    <option>Español</option>
+                    <option>العربية</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=2" defer></script>
+</body>
+</html>
+
+
