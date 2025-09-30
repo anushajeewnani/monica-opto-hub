@@ -5,8 +5,8 @@ const fs = require('fs');
 // Note: Uploads directory creation removed for Vercel compatibility
 // Vercel serverless functions don't support directory creation
 
-// Database path
-const dbPath = path.join(__dirname, 'database.sqlite');
+// Database path - use in-memory database for Vercel
+const dbPath = process.env.NODE_ENV === 'production' ? ':memory:' : path.join(__dirname, 'database.sqlite');
 
 // Global database instance - this will stay open for the entire server lifetime
 let dbInstance = null;
