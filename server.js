@@ -92,8 +92,13 @@ app.use((err, req, res, next) => {
 // Initialize database and start server
 async function startServer() {
   try {
-    await initDatabase();
-    console.log('✅ Database initialized successfully');
+    // Only initialize database in non-serverless environments
+    if (process.env.NODE_ENV !== 'production') {
+      await initDatabase();
+      console.log('✅ Database initialized successfully');
+    } else {
+      console.log('✅ Running in production mode (Vercel) - skipping database init');
+    }
     
     app.listen(PORT, () => {
       console.log(`🚀 Server running on http://localhost:${PORT}`);
