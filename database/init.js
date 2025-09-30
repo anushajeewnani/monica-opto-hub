@@ -2,10 +2,14 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const fs = require('fs');
 
-// Ensure uploads directory exists
+// Ensure uploads directory exists (only in non-serverless environments)
 const uploadsDir = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+if (!fs.existsSync(uploadsDir) && process.env.NODE_ENV !== 'production') {
+  try {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  } catch (err) {
+    console.log('Note: Could not create uploads directory (serverless environment)');
+  }
 }
 
 // Database path
